@@ -6,7 +6,7 @@ Demonstrate competence in Tableau, Excel and/or other tools as needed through a 
 
 README	Template
 
-# Contents
+## Contents
 [Project Name](#name)
 [Description](#description)
 [Summary](##summary)
@@ -19,35 +19,36 @@ README	Template
 [Related Links](#links)
 
 
-# name
+## name
 
-# description
+### description
 
-## summary
+### summary
 
-## purpose
+### purpose
 
-## technologies
+### technologies
 - 
 - 
 - 
 
-# status: experimental
+## status: experimental
 
-# requirements
+## requirements
 - 
 - 
 - 
 
-# contributors
+## contributors
 - Landry Butler
 - 
 - 
 
-# acknowledgments
+## acknowledgments
 
-# links
+## links
 - home page: 
 - repository: 
 - license: 
 - related projects: 
+
