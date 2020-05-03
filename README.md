@@ -2,12 +2,11 @@
 This repository contains my Capstone project for the Data Analysis Bootcamp at Nashville Software School
 
 <p><strong>Purpose</strong><br>
-Demonstrate competence in Tableau, Excel and/or other tools as needed through a 5-7 minute presentation.
+Demonstrate competence in Tableau, Excel and/or other tools as needed through a 5-7 minute presentation.README	Template
 
-README	Template
+# name
 
 ## Contents
-[Project Name](#name)
 [Description](#description)
 [Summary](##summary)
 [Purpose](##purpose)
@@ -18,8 +17,6 @@ README	Template
 [Acknowledgments](#acknowledgments)
 [Related Links](#links)
 
-
-## name
 
 ### description
 
@@ -51,4 +48,3 @@ README	Template
 - repository: 
 - license: 
 - related projects: 
-
