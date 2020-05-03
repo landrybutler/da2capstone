@@ -1,16 +1,17 @@
 # da2capstone
 
 ## Contents
+- [Status](#Status)
 - [Description](#Description)
 - [Summary](#Summary)
 - [Purpose](#Purpose)
 - [Technologies Used](#Technologies)
-- [Status](#Status)
 - [Requirements](#Requirements)
 - [Contributors](#Contributors)
 - [Acknowledgments](#Acknowledgments)
 - [Related Links](#Links)
 
+## Status: Experimental
 
 ### Description
 
@@ -25,8 +26,6 @@ Demonstrate competence in Tableau, Excel and/or other tools as needed through a 
 - 
 - 
 
-## Status: experimental
-
 ## Requirements
 - 
 - 
@@ -40,7 +39,7 @@ Demonstrate competence in Tableau, Excel and/or other tools as needed through a 
 ## Acknowledgments
 
 ## Links
-- home page: 
-- repository: 
-- license: 
-- related projects: 
+- Home Page: 
+- Repository: 
+- License: 
+- Related Projects: 
