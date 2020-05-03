@@ -14,7 +14,7 @@
 ## Status: Experimental
 Helo world c'mon, get happy.
 
-### Description
+## Description
 
 ### Summary
 This repository contains my Capstone project for the Data Analysis Bootcamp at Nashville Software School
