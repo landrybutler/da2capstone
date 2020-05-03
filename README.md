@@ -18,7 +18,7 @@ Helo world c'mon, get happy.
 
 ### Summary
 This repository contains my Capstone project for the Data Analysis Bootcamp at Nashville Software School
-8
+
 ### Purpose
 Demonstrate competence in Tableau, Excel and/or other tools as needed through a 5-7 minute presentation.
 
