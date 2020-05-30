@@ -1725,43 +1725,44 @@
     <datasource caption='500_Cities__Local_Data_for_Better_Health__2019_release' inline='true' name='federated.0yjnefo1l09ivu11gdzyt0ijzdly' version='18.1'>
       <connection class='federated'>
         <named-connections>
-          <named-connection caption='500_Cities__Local_Data_for_Better_Health__2019_release' name='textscan.0riv58v07i4vfw15yrgk11mts4fp'>
-            <connection class='textscan' directory='/Users/landrybutler/github/da2capstone/data' filename='500_Cities__Local_Data_for_Better_Health__2019_release.csv' password='' server='' />
+          <named-connection caption='500cities_clean' name='textscan.0riv58v07i4vfw15yrgk11mts4fp'>
+            <connection class='textscan' directory='/Users/landrybutler/github/da2capstone/data' filename='500cities_clean.csv' password='' server='' />
           </named-connection>
         </named-connections>
-        <relation connection='textscan.0riv58v07i4vfw15yrgk11mts4fp' name='500_Cities__Local_Data_for_Better_Health__2019_release.csv' table='[500_Cities__Local_Data_for_Better_Health__2019_release#csv]' type='table'>
+        <relation connection='textscan.0riv58v07i4vfw15yrgk11mts4fp' name='500cities_clean.csv' table='[500cities_clean#csv]' type='table'>
           <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
-            <column datatype='integer' name='Year' ordinal='0' />
-            <column datatype='string' name='StateAbbr' ordinal='1' />
-            <column datatype='string' name='StateDesc' ordinal='2' />
-            <column datatype='string' name='CityName' ordinal='3' />
-            <column datatype='string' name='GeographicLevel' ordinal='4' />
-            <column datatype='string' name='DataSource' ordinal='5' />
-            <column datatype='string' name='Category' ordinal='6' />
-            <column datatype='string' name='UniqueID' ordinal='7' />
-            <column datatype='string' name='Measure' ordinal='8' />
-            <column datatype='string' name='Data_Value_Unit' ordinal='9' />
-            <column datatype='string' name='DataValueTypeID' ordinal='10' />
-            <column datatype='string' name='Data_Value_Type' ordinal='11' />
-            <column datatype='real' name='Data_Value' ordinal='12' />
-            <column datatype='real' name='Low_Confidence_Limit' ordinal='13' />
-            <column datatype='real' name='High_Confidence_Limit' ordinal='14' />
-            <column datatype='string' name='Data_Value_Footnote_Symbol' ordinal='15' />
-            <column datatype='string' name='Data_Value_Footnote' ordinal='16' />
-            <column datatype='integer' name='PopulationCount' ordinal='17' />
-            <column datatype='string' name='GeoLocation' ordinal='18' />
-            <column datatype='string' name='CategoryID' ordinal='19' />
-            <column datatype='string' name='MeasureId' ordinal='20' />
-            <column datatype='integer' name='CityFIPS' ordinal='21' />
-            <column datatype='integer' name='TractFIPS' ordinal='22' />
-            <column datatype='string' name='Short_Question_Text' ordinal='23' />
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='year' ordinal='1' />
+            <column datatype='string' name='state_abbr' ordinal='2' />
+            <column datatype='string' name='state_desc' ordinal='3' />
+            <column datatype='string' name='city_name' ordinal='4' />
+            <column datatype='string' name='geographic_level' ordinal='5' />
+            <column datatype='string' name='data_source' ordinal='6' />
+            <column datatype='string' name='category' ordinal='7' />
+            <column datatype='string' name='uid' ordinal='8' />
+            <column datatype='string' name='measure' ordinal='9' />
+            <column datatype='string' name='data_value_unit' ordinal='10' />
+            <column datatype='string' name='data_value_type_id' ordinal='11' />
+            <column datatype='string' name='data_value_type' ordinal='12' />
+            <column datatype='real' name='data_value' ordinal='13' />
+            <column datatype='real' name='low_confidence_limit' ordinal='14' />
+            <column datatype='real' name='high_confidence_limit' ordinal='15' />
+            <column datatype='string' name='data_value_footnote_symbol' ordinal='16' />
+            <column datatype='string' name='data_value_footnote' ordinal='17' />
+            <column datatype='integer' name='population_count' ordinal='18' />
+            <column datatype='string' name='geolocation' ordinal='19' />
+            <column datatype='string' name='category_id' ordinal='20' />
+            <column datatype='string' name='measure_id' ordinal='21' />
+            <column datatype='integer' name='city_fips' ordinal='22' />
+            <column datatype='real' name='tract_fips' ordinal='23' />
+            <column datatype='string' name='short_question_text' ordinal='24' />
           </columns>
         </relation>
         <metadata-records>
           <metadata-record class='capability'>
             <remote-name />
             <remote-type>0</remote-type>
-            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
             <remote-alias />
             <aggregation>Count</aggregation>
             <contains-null>true</contains-null>
@@ -1775,36 +1776,33 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>Year</remote-name>
+            <remote-name>F1</remote-name>
             <remote-type>20</remote-type>
-            <local-name>[Year]</local-name>
-            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
-            <remote-alias>Year</remote-alias>
+            <local-name>[F1]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
             <ordinal>0</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>StateAbbr</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[StateAbbr]</local-name>
-            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
-            <remote-alias>StateAbbr</remote-alias>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>year</remote-alias>
             <ordinal>1</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RUS' />
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>StateDesc</remote-name>
+            <remote-name>state_abbr</remote-name>
             <remote-type>129</remote-type>
-            <local-name>[StateDesc]</local-name>
-            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
-            <remote-alias>StateDesc</remote-alias>
+            <local-name>[state_abbr]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>state_abbr</remote-alias>
             <ordinal>2</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
@@ -1814,11 +1812,11 @@
             <collation flag='0' name='LEN_RUS' />
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>CityName</remote-name>
+            <remote-name>state_desc</remote-name>
             <remote-type>129</remote-type>
-            <local-name>[CityName]</local-name>
-            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
-            <remote-alias>CityName</remote-alias>
+            <local-name>[state_desc]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>state_desc</remote-alias>
             <ordinal>3</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
@@ -1828,11 +1826,11 @@
             <collation flag='0' name='LEN_RUS' />
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>GeographicLevel</remote-name>
+            <remote-name>city_name</remote-name>
             <remote-type>129</remote-type>
-            <local-name>[GeographicLevel]</local-name>
-            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
-            <remote-alias>GeographicLevel</remote-alias>
+            <local-name>[city_name]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>city_name</remote-alias>
             <ordinal>4</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
@@ -1842,11 +1840,11 @@
             <collation flag='0' name='LEN_RUS' />
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>DataSource</remote-name>
+            <remote-name>geographic_level</remote-name>
             <remote-type>129</remote-type>
-            <local-name>[DataSource]</local-name>
-            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
-            <remote-alias>DataSource</remote-alias>
+            <local-name>[geographic_level]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>geographic_level</remote-alias>
             <ordinal>5</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
@@ -1856,11 +1854,11 @@
             <collation flag='0' name='LEN_RUS' />
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>Category</remote-name>
+            <remote-name>data_source</remote-name>
             <remote-type>129</remote-type>
-            <local-name>[Category]</local-name>
-            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
-            <remote-alias>Category</remote-alias>
+            <local-name>[data_source]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>data_source</remote-alias>
             <ordinal>6</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
@@ -1870,11 +1868,11 @@
             <collation flag='0' name='LEN_RUS' />
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>UniqueID</remote-name>
+            <remote-name>category</remote-name>
             <remote-type>129</remote-type>
-            <local-name>[UniqueID]</local-name>
-            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
-            <remote-alias>UniqueID</remote-alias>
+            <local-name>[category]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>category</remote-alias>
             <ordinal>7</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
@@ -1884,11 +1882,11 @@
             <collation flag='0' name='LEN_RUS' />
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>Measure</remote-name>
+            <remote-name>uid</remote-name>
             <remote-type>129</remote-type>
-            <local-name>[Measure]</local-name>
-            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
-            <remote-alias>Measure</remote-alias>
+            <local-name>[uid]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>uid</remote-alias>
             <ordinal>8</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
@@ -1898,11 +1896,11 @@
             <collation flag='0' name='LEN_RUS' />
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>Data_Value_Unit</remote-name>
+            <remote-name>measure</remote-name>
             <remote-type>129</remote-type>
-            <local-name>[Data_Value_Unit]</local-name>
-            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
-            <remote-alias>Data_Value_Unit</remote-alias>
+            <local-name>[measure]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>measure</remote-alias>
             <ordinal>9</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
@@ -1912,11 +1910,11 @@
             <collation flag='0' name='LEN_RUS' />
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>DataValueTypeID</remote-name>
+            <remote-name>data_value_unit</remote-name>
             <remote-type>129</remote-type>
-            <local-name>[DataValueTypeID]</local-name>
-            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
-            <remote-alias>DataValueTypeID</remote-alias>
+            <local-name>[data_value_unit]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>data_value_unit</remote-alias>
             <ordinal>10</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
@@ -1926,11 +1924,11 @@
             <collation flag='0' name='LEN_RUS' />
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>Data_Value_Type</remote-name>
+            <remote-name>data_value_type_id</remote-name>
             <remote-type>129</remote-type>
-            <local-name>[Data_Value_Type]</local-name>
-            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
-            <remote-alias>Data_Value_Type</remote-alias>
+            <local-name>[data_value_type_id]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>data_value_type_id</remote-alias>
             <ordinal>11</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
@@ -1940,45 +1938,12 @@
             <collation flag='0' name='LEN_RUS' />
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>Data_Value</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Data_Value]</local-name>
-            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
-            <remote-alias>Data_Value</remote-alias>
-            <ordinal>12</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Low_Confidence_Limit</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Low_Confidence_Limit]</local-name>
-            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
-            <remote-alias>Low_Confidence_Limit</remote-alias>
-            <ordinal>13</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>High_Confidence_Limit</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[High_Confidence_Limit]</local-name>
-            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
-            <remote-alias>High_Confidence_Limit</remote-alias>
-            <ordinal>14</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Data_Value_Footnote_Symbol</remote-name>
+            <remote-name>data_value_type</remote-name>
             <remote-type>129</remote-type>
-            <local-name>[Data_Value_Footnote_Symbol]</local-name>
-            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
-            <remote-alias>Data_Value_Footnote_Symbol</remote-alias>
-            <ordinal>15</ordinal>
+            <local-name>[data_value_type]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>data_value_type</remote-alias>
+            <ordinal>12</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <scale>1</scale>
@@ -1987,11 +1952,44 @@
             <collation flag='0' name='LEN_RUS' />
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>Data_Value_Footnote</remote-name>
+            <remote-name>data_value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[data_value]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>data_value</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>low_confidence_limit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[low_confidence_limit]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>low_confidence_limit</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>high_confidence_limit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[high_confidence_limit]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>high_confidence_limit</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_value_footnote_symbol</remote-name>
             <remote-type>129</remote-type>
-            <local-name>[Data_Value_Footnote]</local-name>
-            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
-            <remote-alias>Data_Value_Footnote</remote-alias>
+            <local-name>[data_value_footnote_symbol]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>data_value_footnote_symbol</remote-alias>
             <ordinal>16</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
@@ -2001,23 +1999,12 @@
             <collation flag='0' name='LEN_RUS' />
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>PopulationCount</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[PopulationCount]</local-name>
-            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
-            <remote-alias>PopulationCount</remote-alias>
-            <ordinal>17</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>GeoLocation</remote-name>
+            <remote-name>data_value_footnote</remote-name>
             <remote-type>129</remote-type>
-            <local-name>[GeoLocation]</local-name>
-            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
-            <remote-alias>GeoLocation</remote-alias>
-            <ordinal>18</ordinal>
+            <local-name>[data_value_footnote]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>data_value_footnote</remote-alias>
+            <ordinal>17</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <scale>1</scale>
@@ -2026,11 +2013,22 @@
             <collation flag='0' name='LEN_RUS' />
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>CategoryID</remote-name>
+            <remote-name>population_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[population_count]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>population_count</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geolocation</remote-name>
             <remote-type>129</remote-type>
-            <local-name>[CategoryID]</local-name>
-            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
-            <remote-alias>CategoryID</remote-alias>
+            <local-name>[geolocation]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>geolocation</remote-alias>
             <ordinal>19</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
@@ -2040,11 +2038,11 @@
             <collation flag='0' name='LEN_RUS' />
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>MeasureId</remote-name>
+            <remote-name>category_id</remote-name>
             <remote-type>129</remote-type>
-            <local-name>[MeasureId]</local-name>
-            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
-            <remote-alias>MeasureId</remote-alias>
+            <local-name>[category_id]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>category_id</remote-alias>
             <ordinal>20</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
@@ -2054,34 +2052,48 @@
             <collation flag='0' name='LEN_RUS' />
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>CityFIPS</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[CityFIPS]</local-name>
-            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
-            <remote-alias>CityFIPS</remote-alias>
+            <remote-name>measure_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[measure_id]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>measure_id</remote-alias>
             <ordinal>21</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
             <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>TractFIPS</remote-name>
+            <remote-name>city_fips</remote-name>
             <remote-type>20</remote-type>
-            <local-name>[TractFIPS]</local-name>
-            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
-            <remote-alias>TractFIPS</remote-alias>
+            <local-name>[city_fips]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>city_fips</remote-alias>
             <ordinal>22</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <contains-null>true</contains-null>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>Short_Question_Text</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[Short_Question_Text]</local-name>
-            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
-            <remote-alias>Short_Question_Text</remote-alias>
+            <remote-name>tract_fips</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tract_fips]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>tract_fips</remote-alias>
             <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>short_question_text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[short_question_text]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>short_question_text</remote-alias>
+            <ordinal>24</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <scale>1</scale>
@@ -2092,38 +2104,461 @@
         </metadata-records>
       </connection>
       <aliases enabled='yes' />
-      <column caption='Category ID' datatype='string' name='[CategoryID]' role='dimension' type='nominal' />
-      <column caption='City FIPS' datatype='integer' name='[CityFIPS]' role='measure' type='quantitative' />
-      <column caption='City Name' datatype='string' name='[CityName]' role='dimension' type='nominal' />
-      <column caption='Data Source' datatype='string' name='[DataSource]' role='dimension' type='nominal' />
-      <column caption='Data Value Type ID' datatype='string' name='[DataValueTypeID]' role='dimension' type='nominal' />
-      <column caption='Data Value' datatype='real' name='[Data_Value]' role='measure' type='quantitative' />
-      <column caption='Data Value Footnote' datatype='string' name='[Data_Value_Footnote]' role='dimension' type='nominal' />
-      <column caption='Data Value Footnote Symbol' datatype='string' name='[Data_Value_Footnote_Symbol]' role='dimension' type='nominal' />
-      <column caption='Data Value Type' datatype='string' name='[Data_Value_Type]' role='dimension' type='nominal' />
-      <column caption='Data Value Unit' datatype='string' name='[Data_Value_Unit]' role='dimension' type='nominal' />
-      <column aggregation='Avg' caption='Latitude' datatype='real' datatype-customized='true' name='[GeoLocation - Split 1]' role='dimension' semantic-role='[Geographical].[Latitude]' type='quantitative' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0yjnefo1l09ivu11gdzyt0ijzdly].[GeoLocation]'>
+      <column caption='Latitude' datatype='real' datatype-customized='true' name='[GeoLocation - Split 1]' role='dimension' semantic-role='[Geographical].[Latitude]' type='quantitative' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0yjnefo1l09ivu11gdzyt0ijzdly].[GeoLocation]'>
         <calculation class='tableau' formula='FLOAT(TRIM( SPLIT( SPLIT( [GeoLocation], &quot;(&quot;, 2 ), &quot;,&quot;, 1 ) ))' />
       </column>
-      <column aggregation='Avg' caption='Longitude' datatype='real' datatype-customized='true' name='[GeoLocation - Split 2]' role='dimension' semantic-role='[Geographical].[Longitude]' type='quantitative' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0yjnefo1l09ivu11gdzyt0ijzdly].[GeoLocation]'>
+      <column caption='Longitude' datatype='real' datatype-customized='true' name='[GeoLocation - Split 2]' role='dimension' semantic-role='[Geographical].[Longitude]' type='quantitative' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0yjnefo1l09ivu11gdzyt0ijzdly].[GeoLocation]'>
         <calculation class='tableau' formula='FLOAT(TRIM( SPLIT( SPLIT( SPLIT( [GeoLocation], &quot;(&quot;, 2 ), &quot;,&quot;, 2 ), &quot;)&quot;, 1 ) ))' />
       </column>
       <column caption='Geo Location' datatype='string' name='[GeoLocation]' role='dimension' type='nominal' />
-      <column caption='Geographic Level' datatype='string' name='[GeographicLevel]' role='dimension' type='nominal' />
-      <column caption='High Confidence Limit' datatype='real' name='[High_Confidence_Limit]' role='measure' type='quantitative' />
-      <column caption='Low Confidence Limit' datatype='real' name='[Low_Confidence_Limit]' role='measure' type='quantitative' />
-      <column caption='Measure Id' datatype='string' name='[MeasureId]' role='dimension' type='nominal' />
       <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
         <calculation class='tableau' formula='1' />
       </column>
-      <column caption='Population Count' datatype='integer' name='[PopulationCount]' role='measure' type='quantitative' />
-      <column caption='Short Question Text' datatype='string' name='[Short_Question_Text]' role='dimension' type='nominal' />
-      <column caption='State Abbr' datatype='string' name='[StateAbbr]' role='dimension' type='nominal' />
-      <column caption='State Desc' datatype='string' name='[StateDesc]' role='dimension' type='nominal' />
-      <column caption='Tract FIPS' datatype='integer' name='[TractFIPS]' role='measure' type='quantitative' />
-      <column caption='Unique ID' datatype='string' name='[UniqueID]' role='dimension' type='nominal' />
-      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
-      <layout dim-ordering='alphabetic' dim-percentage='0.636364' measure-ordering='alphabetic' measure-percentage='0.363636' show-structure='true' />
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column caption='Category Id' datatype='string' name='[category_id]' role='dimension' type='nominal' />
+      <column caption='City Fips' datatype='integer' name='[city_fips]' role='measure' type='quantitative' />
+      <column caption='City Name1' datatype='string' name='[city_name]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Data Source' datatype='string' name='[data_source]' role='dimension' type='nominal' />
+      <column caption='Data Value' datatype='real' name='[data_value]' role='measure' type='quantitative' />
+      <column caption='Data Value Footnote' datatype='string' name='[data_value_footnote]' role='dimension' type='nominal' />
+      <column caption='Data Value Footnote Symbol' datatype='string' name='[data_value_footnote_symbol]' role='dimension' type='nominal' />
+      <column caption='Data Value Type' datatype='string' name='[data_value_type]' role='dimension' type='nominal' />
+      <column caption='Data Value Type Id' datatype='string' name='[data_value_type_id]' role='dimension' type='nominal' />
+      <column caption='Data Value Unit' datatype='string' name='[data_value_unit]' role='dimension' type='nominal' />
+      <column caption='Geographic Level' datatype='string' name='[geographic_level]' role='dimension' type='nominal' />
+      <column caption='Geolocation' datatype='string' name='[geolocation]' role='dimension' type='nominal' />
+      <column caption='High Confidence Limit' datatype='real' name='[high_confidence_limit]' role='measure' type='quantitative' />
+      <column caption='Low Confidence Limit' datatype='real' name='[low_confidence_limit]' role='measure' type='quantitative' />
+      <column caption='Measure' datatype='string' name='[measure]' role='dimension' type='nominal' />
+      <column caption='Measure Id' datatype='string' name='[measure_id]' role='dimension' type='nominal' />
+      <column caption='Population Count' datatype='integer' name='[population_count]' role='measure' type='quantitative' />
+      <column caption='Short Question Text' datatype='string' name='[short_question_text]' role='dimension' type='nominal' />
+      <column caption='State Abbr' datatype='string' name='[state_abbr]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='State Desc' datatype='string' name='[state_desc]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Tract Fips' datatype='real' name='[tract_fips]' role='measure' type='quantitative' />
+      <column caption='Uid' datatype='string' name='[uid]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.501134' measure-ordering='alphabetic' measure-percentage='0.498866' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+    <datasource caption='500cities_clean' inline='true' name='federated.0b96q210tucfpz16ub2v10x8e5cn' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='500cities_clean' name='textscan.17nvn0b0gkojml1adnqwx1mbx4ss'>
+            <connection class='textscan' directory='/Users/landrybutler/github/da2capstone/data' filename='500cities_clean.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.17nvn0b0gkojml1adnqwx1mbx4ss' name='500cities_clean.csv' table='[500cities_clean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='year' ordinal='1' />
+            <column datatype='string' name='state_abbr' ordinal='2' />
+            <column datatype='string' name='state_desc' ordinal='3' />
+            <column datatype='string' name='city_name' ordinal='4' />
+            <column datatype='string' name='geographic_level' ordinal='5' />
+            <column datatype='string' name='data_source' ordinal='6' />
+            <column datatype='string' name='category' ordinal='7' />
+            <column datatype='string' name='uid' ordinal='8' />
+            <column datatype='string' name='measure' ordinal='9' />
+            <column datatype='string' name='data_value_unit' ordinal='10' />
+            <column datatype='string' name='data_value_type_id' ordinal='11' />
+            <column datatype='string' name='data_value_type' ordinal='12' />
+            <column datatype='real' name='data_value' ordinal='13' />
+            <column datatype='real' name='low_confidence_limit' ordinal='14' />
+            <column datatype='real' name='high_confidence_limit' ordinal='15' />
+            <column datatype='string' name='data_value_footnote_symbol' ordinal='16' />
+            <column datatype='string' name='data_value_footnote' ordinal='17' />
+            <column datatype='integer' name='population_count' ordinal='18' />
+            <column datatype='string' name='geolocation' ordinal='19' />
+            <column datatype='string' name='category_id' ordinal='20' />
+            <column datatype='string' name='measure_id' ordinal='21' />
+            <column datatype='integer' name='city_fips' ordinal='22' />
+            <column datatype='real' name='tract_fips' ordinal='23' />
+            <column datatype='string' name='short_question_text' ordinal='24' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state_abbr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state_abbr]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>state_abbr</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state_desc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state_desc]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>state_desc</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city_name]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>city_name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geographic_level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[geographic_level]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>geographic_level</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[data_source]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>data_source</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uid</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[uid]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>uid</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>measure</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[measure]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>measure</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_value_unit</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[data_value_unit]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>data_value_unit</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_value_type_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[data_value_type_id]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>data_value_type_id</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_value_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[data_value_type]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>data_value_type</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[data_value]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>data_value</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>low_confidence_limit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[low_confidence_limit]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>low_confidence_limit</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>high_confidence_limit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[high_confidence_limit]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>high_confidence_limit</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_value_footnote_symbol</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[data_value_footnote_symbol]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>data_value_footnote_symbol</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_value_footnote</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[data_value_footnote]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>data_value_footnote</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>population_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[population_count]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>population_count</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>geolocation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[geolocation]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>geolocation</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[category_id]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>category_id</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>measure_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[measure_id]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>measure_id</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city_fips</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[city_fips]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>city_fips</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tract_fips</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tract_fips]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>tract_fips</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>short_question_text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[short_question_text]</local-name>
+            <parent-name>[500cities_clean.csv]</parent-name>
+            <remote-alias>short_question_text</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column caption='Category Id' datatype='string' name='[category_id]' role='dimension' type='nominal' />
+      <column caption='City Fips' datatype='integer' name='[city_fips]' role='measure' type='quantitative' />
+      <column caption='City Name' datatype='string' name='[city_name]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Data Source' datatype='string' name='[data_source]' role='dimension' type='nominal' />
+      <column caption='Data Value' datatype='real' name='[data_value]' role='measure' type='quantitative' />
+      <column caption='Data Value Footnote' datatype='string' name='[data_value_footnote]' role='dimension' type='nominal' />
+      <column caption='Data Value Footnote Symbol' datatype='string' name='[data_value_footnote_symbol]' role='dimension' type='nominal' />
+      <column caption='Data Value Type' datatype='string' name='[data_value_type]' role='dimension' type='nominal' />
+      <column caption='Data Value Type Id' datatype='string' name='[data_value_type_id]' role='dimension' type='nominal' />
+      <column caption='Data Value Unit' datatype='string' name='[data_value_unit]' role='dimension' type='nominal' />
+      <column caption='Geographic Level' datatype='string' name='[geographic_level]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Geolocation - Lat' datatype='real' datatype-customized='true' name='[geolocation - Split 1]' role='dimension' semantic-role='[Geographical].[Latitude]' type='quantitative' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0b96q210tucfpz16ub2v10x8e5cn].[geolocation]'>
+        <calculation class='tableau' formula='FLOAT(TRIM( SPLIT( SPLIT( [geolocation], &quot;(&quot;, 2 ), &quot;,&quot;, 1 ) ))' />
+      </column>
+      <column aggregation='Avg' caption='Geolocation - Long' datatype='real' datatype-customized='true' name='[geolocation - Split 2]' role='dimension' semantic-role='[Geographical].[Longitude]' type='quantitative' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0b96q210tucfpz16ub2v10x8e5cn].[geolocation]'>
+        <calculation class='tableau' formula='FLOAT(TRIM( SPLIT( SPLIT( SPLIT( [geolocation], &quot;(&quot;, 2 ), &quot;,&quot;, 2 ), &quot;)&quot;, 1 ) ))' />
+      </column>
+      <column caption='Geolocation' datatype='string' name='[geolocation]' role='dimension' type='nominal' />
+      <column caption='High Confidence Limit' datatype='real' name='[high_confidence_limit]' role='measure' type='quantitative' />
+      <column caption='Low Confidence Limit' datatype='real' name='[low_confidence_limit]' role='measure' type='quantitative' />
+      <column caption='Measure' datatype='string' name='[measure]' role='dimension' type='nominal' />
+      <column caption='Measure Id' datatype='string' name='[measure_id]' role='dimension' type='nominal' />
+      <column caption='Population Count' datatype='integer' name='[population_count]' role='measure' type='quantitative' />
+      <column caption='Short Question Text' datatype='string' name='[short_question_text]' role='dimension' type='nominal' />
+      <column caption='State Abbr' datatype='string' name='[state_abbr]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='State Desc' datatype='string' name='[state_desc]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Tract Fips' datatype='real' name='[tract_fips]' role='measure' type='quantitative' />
+      <column caption='Uid' datatype='string' name='[uid]' role='dimension' type='nominal' />
+      <column caption='Year' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.555556' measure-ordering='alphabetic' measure-percentage='0.444444' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
@@ -2137,27 +2572,29 @@
       <table>
         <view>
           <datasources>
-            <datasource caption='500_Cities__Local_Data_for_Better_Health__2019_release' name='federated.0yjnefo1l09ivu11gdzyt0ijzdly' />
+            <datasource caption='500cities_clean' name='federated.0b96q210tucfpz16ub2v10x8e5cn' />
           </datasources>
           <mapsources>
             <mapsource name='Tableau' />
           </mapsources>
-          <datasource-dependencies datasource='federated.0yjnefo1l09ivu11gdzyt0ijzdly'>
-            <column aggregation='Avg' caption='Latitude' datatype='real' datatype-customized='true' name='[GeoLocation - Split 1]' role='dimension' semantic-role='[Geographical].[Latitude]' type='quantitative' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0yjnefo1l09ivu11gdzyt0ijzdly].[GeoLocation]'>
-              <calculation class='tableau' formula='FLOAT(TRIM( SPLIT( SPLIT( [GeoLocation], &quot;(&quot;, 2 ), &quot;,&quot;, 1 ) ))' />
+          <datasource-dependencies datasource='federated.0b96q210tucfpz16ub2v10x8e5cn'>
+            <column caption='City Name' datatype='string' name='[city_name]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column aggregation='Avg' caption='Geolocation - Lat' datatype='real' datatype-customized='true' name='[geolocation - Split 1]' role='dimension' semantic-role='[Geographical].[Latitude]' type='quantitative' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.0b96q210tucfpz16ub2v10x8e5cn].[geolocation]'>
+              <calculation class='tableau' formula='FLOAT(TRIM( SPLIT( SPLIT( [geolocation], &quot;(&quot;, 2 ), &quot;,&quot;, 1 ) ))' />
             </column>
-            <column aggregation='Avg' caption='Longitude' datatype='real' datatype-customized='true' name='[GeoLocation - Split 2]' role='dimension' semantic-role='[Geographical].[Longitude]' type='quantitative' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0yjnefo1l09ivu11gdzyt0ijzdly].[GeoLocation]'>
-              <calculation class='tableau' formula='FLOAT(TRIM( SPLIT( SPLIT( SPLIT( [GeoLocation], &quot;(&quot;, 2 ), &quot;,&quot;, 2 ), &quot;)&quot;, 1 ) ))' />
+            <column aggregation='Avg' caption='Geolocation - Long' datatype='real' datatype-customized='true' name='[geolocation - Split 2]' role='dimension' semantic-role='[Geographical].[Longitude]' type='quantitative' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.0b96q210tucfpz16ub2v10x8e5cn].[geolocation]'>
+              <calculation class='tableau' formula='FLOAT(TRIM( SPLIT( SPLIT( SPLIT( [geolocation], &quot;(&quot;, 2 ), &quot;,&quot;, 2 ), &quot;)&quot;, 1 ) ))' />
             </column>
-            <column caption='Geo Location' datatype='string' name='[GeoLocation]' role='dimension' type='nominal' />
-            <column-instance column='[GeoLocation - Split 1]' derivation='None' name='[none:GeoLocation - Split 1:qk]' pivot='key' type='quantitative' />
-            <column-instance column='[GeoLocation - Split 2]' derivation='None' name='[none:GeoLocation - Split 2:qk]' pivot='key' type='quantitative' />
+            <column caption='Geolocation' datatype='string' name='[geolocation]' role='dimension' type='nominal' />
+            <column-instance column='[city_name]' derivation='None' name='[none:city_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[geolocation - Split 1]' derivation='None' name='[none:geolocation - Split 1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[geolocation - Split 2]' derivation='None' name='[none:geolocation - Split 2:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <aggregation value='true' />
         </view>
         <style>
           <style-rule element='map'>
-            <format attr='washout' value='0.0' />
+            <format attr='washout' value='0' />
           </style-rule>
         </style>
         <panes>
@@ -2166,10 +2603,13 @@
               <breakdown value='auto' />
             </view>
             <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0b96q210tucfpz16ub2v10x8e5cn].[none:city_name:nk]' />
+            </encodings>
           </pane>
         </panes>
-        <rows>[federated.0yjnefo1l09ivu11gdzyt0ijzdly].[none:GeoLocation - Split 1:qk]</rows>
-        <cols>[federated.0yjnefo1l09ivu11gdzyt0ijzdly].[none:GeoLocation - Split 2:qk]</cols>
+        <rows>[federated.0b96q210tucfpz16ub2v10x8e5cn].[none:geolocation - Split 1:qk]</rows>
+        <cols>[federated.0b96q210tucfpz16ub2v10x8e5cn].[none:geolocation - Split 2:qk]</cols>
       </table>
       <simple-id uuid='{AAD7475A-D96B-4AD7-B254-1371CE415D27}' />
     </worksheet>
@@ -2350,7 +2790,7 @@
       <simple-id uuid='{CD71B2AE-0EE3-4CAA-8D44-641B082DE950}' />
     </worksheet>
   </worksheets>
-  <windows source-height='114'>
+  <windows source-height='135'>
     <window class='worksheet' name='Census Tract'>
       <cards>
         <edge name='left'>
@@ -2478,11 +2918,19 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='2147483647'>
             <card type='title' />
           </strip>
         </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0b96q210tucfpz16ub2v10x8e5cn].[none:city_name:nk]' type='color' />
+          </strip>
+        </edge>
       </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
       <simple-id uuid='{F6942E39-AF6B-4213-A64C-031A9AC579E3}' />
     </window>
   </windows>
