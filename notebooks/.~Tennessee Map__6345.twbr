@@ -1,0 +1,1454 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0525.1210                               -->
+<workbook source-build='2020.2.1 (20202.20.0525.1210)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SpatialFileLayer />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='tennessee_providers' inline='true' name='federated.1pcses51cqzeh51d5aj0m0dhctxz' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tennessee_providers' name='textscan.1y9lcfe1v75lgy1c5bel31km8ubl'>
+            <connection class='textscan' directory='/Users/landrybutler/github/da2capstone/data/clean' filename='tennessee_providers.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1y9lcfe1v75lgy1c5bel31km8ubl' name='tennessee_providers.csv' table='[tennessee_providers#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='address' ordinal='1' />
+            <column datatype='string' name='address2' ordinal='2' />
+            <column datatype='string' name='city' ordinal='3' />
+            <column datatype='string' name='state' ordinal='4' />
+            <column datatype='integer' name='zip' ordinal='5' />
+            <column datatype='string' name='full_name' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1y9lcfe1v75lgy1c5bel31km8ubl' name='tennessee_providers.csv' table='[tennessee_providers#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='address' ordinal='1' />
+            <column datatype='string' name='address2' ordinal='2' />
+            <column datatype='string' name='city' ordinal='3' />
+            <column datatype='string' name='state' ordinal='4' />
+            <column datatype='integer' name='zip' ordinal='5' />
+            <column datatype='string' name='full_name' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tennessee_providers.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[tennessee_providers.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tennessee_providers.csv_49C8A7A4D1894DCA88F5F5FD84422980]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>address</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[address]</local-name>
+            <parent-name>[tennessee_providers.csv]</parent-name>
+            <remote-alias>address</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tennessee_providers.csv_49C8A7A4D1894DCA88F5F5FD84422980]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>address2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[address2]</local-name>
+            <parent-name>[tennessee_providers.csv]</parent-name>
+            <remote-alias>address2</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tennessee_providers.csv_49C8A7A4D1894DCA88F5F5FD84422980]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[tennessee_providers.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tennessee_providers.csv_49C8A7A4D1894DCA88F5F5FD84422980]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[tennessee_providers.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tennessee_providers.csv_49C8A7A4D1894DCA88F5F5FD84422980]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zip</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[zip]</local-name>
+            <parent-name>[tennessee_providers.csv]</parent-name>
+            <remote-alias>zip</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tennessee_providers.csv_49C8A7A4D1894DCA88F5F5FD84422980]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>full_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[full_name]</local-name>
+            <parent-name>[tennessee_providers.csv]</parent-name>
+            <remote-alias>full_name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[tennessee_providers.csv_49C8A7A4D1894DCA88F5F5FD84422980]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='tennessee_providers.csv' datatype='table' name='[__tableau_internal_object_id__].[tennessee_providers.csv_49C8A7A4D1894DCA88F5F5FD84422980]' role='measure' type='quantitative' />
+      <column caption='Address2' datatype='string' name='[address2]' role='dimension' type='nominal' />
+      <column caption='Address' datatype='string' name='[address]' role='dimension' type='nominal' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Full Name' datatype='string' name='[full_name]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column aggregation='Sum' caption='Zip' datatype='integer' default-format='*00000' name='[zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='tennessee_providers.csv' id='tennessee_providers.csv_49C8A7A4D1894DCA88F5F5FD84422980'>
+            <properties context=''>
+              <relation connection='textscan.1y9lcfe1v75lgy1c5bel31km8ubl' name='tennessee_providers.csv' table='[tennessee_providers#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='address' ordinal='1' />
+                  <column datatype='string' name='address2' ordinal='2' />
+                  <column datatype='string' name='city' ordinal='3' />
+                  <column datatype='string' name='state' ordinal='4' />
+                  <column datatype='integer' name='zip' ordinal='5' />
+                  <column datatype='string' name='full_name' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='TN_City_Boundaries (2)' inline='true' name='federated.12s58871bh23k6166k5ef1cepytn' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='TN_City_Boundaries' name='ogrdirect.0b9f4an1iwq1se16jngld0pfg9g4'>
+            <connection class='ogrdirect' directory='/Users/landrybutler/github/da2capstone/data/location/TN_City_Boundaries-shp' filename='TN_City_Boundaries.shp' ogr-grid-shift-folder='/Applications/Tableau Desktop 2020.2.app/Contents/install/local/proj4' password='' server='' tablename='' />
+          </named-connection>
+          <named-connection caption='all_providers_geocoded_addresses' name='textscan.1wfqa401hlflsq10cih7r0wnavd1'>
+            <connection class='textscan' directory='/Users/landrybutler/github/da2capstone/data/clean' filename='all_providers_geocoded_addresses.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='ogrdirect.0b9f4an1iwq1se16jngld0pfg9g4' name='TN_City_Boundaries.shp' table='[TN_City_Boundaries.shp]' type='table'>
+          <columns>
+            <column datatype='integer' name='OBJECTID' ordinal='0' />
+            <column datatype='string' name='NAME' ordinal='1' />
+            <column datatype='real' name='ShapeSTAre' ordinal='2' />
+            <column datatype='real' name='ShapeSTLen' ordinal='3' />
+            <column datatype='spatial' name='Geometry' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='ogrdirect.0b9f4an1iwq1se16jngld0pfg9g4' name='TN_City_Boundaries.shp' table='[TN_City_Boundaries.shp]' type='table'>
+          <columns>
+            <column datatype='integer' name='OBJECTID' ordinal='0' />
+            <column datatype='string' name='NAME' ordinal='1' />
+            <column datatype='real' name='ShapeSTAre' ordinal='2' />
+            <column datatype='real' name='ShapeSTLen' ordinal='3' />
+            <column datatype='spatial' name='Geometry' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>OBJECTID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[OBJECTID]</local-name>
+            <parent-name>[TN_City_Boundaries.shp]</parent-name>
+            <remote-alias>OBJECTID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TN_City_Boundaries.shp_5DEED632A06944E7A0A1C0E0B2EF04D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME]</local-name>
+            <parent-name>[TN_City_Boundaries.shp]</parent-name>
+            <remote-alias>NAME</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TN_City_Boundaries.shp_5DEED632A06944E7A0A1C0E0B2EF04D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ShapeSTAre</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ShapeSTAre]</local-name>
+            <parent-name>[TN_City_Boundaries.shp]</parent-name>
+            <remote-alias>ShapeSTAre</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TN_City_Boundaries.shp_5DEED632A06944E7A0A1C0E0B2EF04D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ShapeSTLen</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ShapeSTLen]</local-name>
+            <parent-name>[TN_City_Boundaries.shp]</parent-name>
+            <remote-alias>ShapeSTLen</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TN_City_Boundaries.shp_5DEED632A06944E7A0A1C0E0B2EF04D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry</remote-name>
+            <remote-type>8</remote-type>
+            <local-name>[Geometry]</local-name>
+            <parent-name>[TN_City_Boundaries.shp]</parent-name>
+            <remote-alias>Geometry</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Collect</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TN_City_Boundaries.shp_5DEED632A06944E7A0A1C0E0B2EF04D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Name' datatype='string' name='[NAME]' role='dimension' type='nominal' />
+      <column caption='Objectid' datatype='integer' name='[OBJECTID]' role='measure' type='quantitative' />
+      <column caption='Shape ST Are' datatype='real' name='[ShapeSTAre]' role='measure' type='quantitative' />
+      <column caption='Shape ST Len' datatype='real' name='[ShapeSTLen]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='TN_City_Boundaries.shp' datatype='table' name='[__tableau_internal_object_id__].[TN_City_Boundaries.shp_5DEED632A06944E7A0A1C0E0B2EF04D8]' role='measure' type='quantitative' />
+      <column-instance column='[NAME]' derivation='None' name='[none:NAME:nk]' pivot='key' type='nominal' />
+      <mapped-images>
+        <mapped-image caption='Davidson County' expression='file:///Users/landrybutler/Downloads/Screen Shot 2020-06-05 at 10.28.05 AM.png' name='[MappedImage1]'>
+          <mapping bottom='36.075150000000001' left='-86.765900000000002' right='-86.776889999999995' top='0.0' x='[Longitude (generated)]' y='[Latitude (generated)]' />
+        </mapped-image>
+      </mapped-images>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:NAME:nk]' palette='gray_10_0' type='palette'>
+            <map to='#49525e'>
+              <bucket>&quot;Belle Meade&quot;</bucket>
+            </map>
+            <map to='#49525e'>
+              <bucket>&quot;Berry Hill&quot;</bucket>
+            </map>
+            <map to='#49525e'>
+              <bucket>&quot;Forest Hills&quot;</bucket>
+            </map>
+            <map to='#49525e'>
+              <bucket>&quot;Oak Hill&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Franklin&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Germantown&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Nolensville&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Mt. Juliet&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Thompson&apos;s Station&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Murfreesboro&quot;</bucket>
+            </map>
+            <map to='#d5d5d5'>
+              <bucket>&quot;Nashville&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Tusculum&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Spring Hill&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='TN_City_Boundaries.shp' id='TN_City_Boundaries.shp_5DEED632A06944E7A0A1C0E0B2EF04D8'>
+            <properties context=''>
+              <relation connection='ogrdirect.0b9f4an1iwq1se16jngld0pfg9g4' name='TN_City_Boundaries.shp' table='[TN_City_Boundaries.shp]' type='table'>
+                <columns>
+                  <column datatype='integer' name='OBJECTID' ordinal='0' />
+                  <column datatype='string' name='NAME' ordinal='1' />
+                  <column datatype='real' name='ShapeSTAre' ordinal='2' />
+                  <column datatype='real' name='ShapeSTLen' ordinal='3' />
+                  <column datatype='spatial' name='Geometry' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='all_providers_geocoded_addresses' inline='true' name='federated.1x48b4w0if7fpc1ea82ls1ydaep6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='all_providers_geocoded_addresses' name='textscan.0ukybor1lpuxs71f6haq60ig7oal'>
+            <connection class='textscan' directory='/Users/landrybutler/github/da2capstone/data/clean' filename='all_providers_geocoded_addresses.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0ukybor1lpuxs71f6haq60ig7oal' name='all_providers_geocoded_addresses.csv' table='[all_providers_geocoded_addresses#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='address' ordinal='1' />
+            <column datatype='string' name='address2' ordinal='2' />
+            <column datatype='string' name='city' ordinal='3' />
+            <column datatype='string' name='full_name' ordinal='4' />
+            <column datatype='real' name='latitude' ordinal='5' />
+            <column datatype='real' name='longitude' ordinal='6' />
+            <column datatype='string' name='state' ordinal='7' />
+            <column datatype='real' name='zip' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0ukybor1lpuxs71f6haq60ig7oal' name='all_providers_geocoded_addresses.csv' table='[all_providers_geocoded_addresses#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='address' ordinal='1' />
+            <column datatype='string' name='address2' ordinal='2' />
+            <column datatype='string' name='city' ordinal='3' />
+            <column datatype='string' name='full_name' ordinal='4' />
+            <column datatype='real' name='latitude' ordinal='5' />
+            <column datatype='real' name='longitude' ordinal='6' />
+            <column datatype='string' name='state' ordinal='7' />
+            <column datatype='real' name='zip' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[all_providers_geocoded_addresses.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[all_providers_geocoded_addresses.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_providers_geocoded_addresses.csv_D9C9E47C222C49F8B4E725C1FDE34F16]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>address</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[address]</local-name>
+            <parent-name>[all_providers_geocoded_addresses.csv]</parent-name>
+            <remote-alias>address</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_providers_geocoded_addresses.csv_D9C9E47C222C49F8B4E725C1FDE34F16]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>address2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[address2]</local-name>
+            <parent-name>[all_providers_geocoded_addresses.csv]</parent-name>
+            <remote-alias>address2</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_providers_geocoded_addresses.csv_D9C9E47C222C49F8B4E725C1FDE34F16]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[all_providers_geocoded_addresses.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_providers_geocoded_addresses.csv_D9C9E47C222C49F8B4E725C1FDE34F16]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>full_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[full_name]</local-name>
+            <parent-name>[all_providers_geocoded_addresses.csv]</parent-name>
+            <remote-alias>full_name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_providers_geocoded_addresses.csv_D9C9E47C222C49F8B4E725C1FDE34F16]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[all_providers_geocoded_addresses.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_providers_geocoded_addresses.csv_D9C9E47C222C49F8B4E725C1FDE34F16]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[all_providers_geocoded_addresses.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_providers_geocoded_addresses.csv_D9C9E47C222C49F8B4E725C1FDE34F16]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[all_providers_geocoded_addresses.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_providers_geocoded_addresses.csv_D9C9E47C222C49F8B4E725C1FDE34F16]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zip</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[zip]</local-name>
+            <parent-name>[all_providers_geocoded_addresses.csv]</parent-name>
+            <remote-alias>zip</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[all_providers_geocoded_addresses.csv_D9C9E47C222C49F8B4E725C1FDE34F16]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='all_providers_geocoded_addresses.csv' datatype='table' name='[__tableau_internal_object_id__].[all_providers_geocoded_addresses.csv_D9C9E47C222C49F8B4E725C1FDE34F16]' role='measure' type='quantitative' />
+      <column caption='Address2' datatype='string' name='[address2]' role='dimension' type='nominal' />
+      <column caption='Address' datatype='string' name='[address]' role='dimension' type='nominal' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Full Name' datatype='string' name='[full_name]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='dimension' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='dimension' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column aggregation='Sum' caption='Zip' datatype='real' default-format='*00000' name='[zip]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column-instance column='[latitude]' derivation='None' name='[none:latitude:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[longitude]' derivation='None' name='[none:longitude:qk]' pivot='key' type='quantitative' />
+      <group hidden='true' name='[Exclusions (Latitude,Longitude)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:latitude:qk]' />
+          <groupfilter function='level-members' level='[none:longitude:qk]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='all_providers_geocoded_addresses.csv' id='all_providers_geocoded_addresses.csv_D9C9E47C222C49F8B4E725C1FDE34F16'>
+            <properties context=''>
+              <relation connection='textscan.0ukybor1lpuxs71f6haq60ig7oal' name='all_providers_geocoded_addresses.csv' table='[all_providers_geocoded_addresses#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='address' ordinal='1' />
+                  <column datatype='string' name='address2' ordinal='2' />
+                  <column datatype='string' name='city' ordinal='3' />
+                  <column datatype='string' name='full_name' ordinal='4' />
+                  <column datatype='real' name='latitude' ordinal='5' />
+                  <column datatype='real' name='longitude' ordinal='6' />
+                  <column datatype='string' name='state' ordinal='7' />
+                  <column datatype='real' name='zip' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='500_Cities__Local_Data_for_Better_Health__2019_release' inline='true' name='federated.1cm1rxo1j4hmp41aokg780xdut0o' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='500_Cities__Local_Data_for_Better_Health__2019_release' name='textscan.10bowmm0m3624q13r864i0u98nio'>
+            <connection class='textscan' directory='/Users/landrybutler/github/da2capstone/data/location' filename='500_Cities__Local_Data_for_Better_Health__2019_release.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.10bowmm0m3624q13r864i0u98nio' name='500_Cities__Local_Data_for_Better_Health__2019_release.csv' table='[500_Cities__Local_Data_for_Better_Health__2019_release#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='string' name='StateAbbr' ordinal='1' />
+            <column datatype='string' name='StateDesc' ordinal='2' />
+            <column datatype='string' name='CityName' ordinal='3' />
+            <column datatype='string' name='GeographicLevel' ordinal='4' />
+            <column datatype='string' name='DataSource' ordinal='5' />
+            <column datatype='string' name='Category' ordinal='6' />
+            <column datatype='string' name='UniqueID' ordinal='7' />
+            <column datatype='string' name='Measure' ordinal='8' />
+            <column datatype='string' name='Data_Value_Unit' ordinal='9' />
+            <column datatype='string' name='DataValueTypeID' ordinal='10' />
+            <column datatype='string' name='Data_Value_Type' ordinal='11' />
+            <column datatype='real' name='Data_Value' ordinal='12' />
+            <column datatype='real' name='Low_Confidence_Limit' ordinal='13' />
+            <column datatype='real' name='High_Confidence_Limit' ordinal='14' />
+            <column datatype='string' name='Data_Value_Footnote_Symbol' ordinal='15' />
+            <column datatype='string' name='Data_Value_Footnote' ordinal='16' />
+            <column datatype='integer' name='PopulationCount' ordinal='17' />
+            <column datatype='string' name='GeoLocation' ordinal='18' />
+            <column datatype='string' name='CategoryID' ordinal='19' />
+            <column datatype='string' name='MeasureId' ordinal='20' />
+            <column datatype='integer' name='CityFIPS' ordinal='21' />
+            <column datatype='integer' name='TractFIPS' ordinal='22' />
+            <column datatype='string' name='Short_Question_Text' ordinal='23' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.10bowmm0m3624q13r864i0u98nio' name='500_Cities__Local_Data_for_Better_Health__2019_release.csv' table='[500_Cities__Local_Data_for_Better_Health__2019_release#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='string' name='StateAbbr' ordinal='1' />
+            <column datatype='string' name='StateDesc' ordinal='2' />
+            <column datatype='string' name='CityName' ordinal='3' />
+            <column datatype='string' name='GeographicLevel' ordinal='4' />
+            <column datatype='string' name='DataSource' ordinal='5' />
+            <column datatype='string' name='Category' ordinal='6' />
+            <column datatype='string' name='UniqueID' ordinal='7' />
+            <column datatype='string' name='Measure' ordinal='8' />
+            <column datatype='string' name='Data_Value_Unit' ordinal='9' />
+            <column datatype='string' name='DataValueTypeID' ordinal='10' />
+            <column datatype='string' name='Data_Value_Type' ordinal='11' />
+            <column datatype='real' name='Data_Value' ordinal='12' />
+            <column datatype='real' name='Low_Confidence_Limit' ordinal='13' />
+            <column datatype='real' name='High_Confidence_Limit' ordinal='14' />
+            <column datatype='string' name='Data_Value_Footnote_Symbol' ordinal='15' />
+            <column datatype='string' name='Data_Value_Footnote' ordinal='16' />
+            <column datatype='integer' name='PopulationCount' ordinal='17' />
+            <column datatype='string' name='GeoLocation' ordinal='18' />
+            <column datatype='string' name='CategoryID' ordinal='19' />
+            <column datatype='string' name='MeasureId' ordinal='20' />
+            <column datatype='integer' name='CityFIPS' ordinal='21' />
+            <column datatype='integer' name='TractFIPS' ordinal='22' />
+            <column datatype='string' name='Short_Question_Text' ordinal='23' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[500_Cities__Local_Data_for_Better_Health__2019_release.csv_9E2CCDE218C342E19E7106002D8D3E17]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StateAbbr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[StateAbbr]</local-name>
+            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
+            <remote-alias>StateAbbr</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[500_Cities__Local_Data_for_Better_Health__2019_release.csv_9E2CCDE218C342E19E7106002D8D3E17]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StateDesc</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[StateDesc]</local-name>
+            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
+            <remote-alias>StateDesc</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[500_Cities__Local_Data_for_Better_Health__2019_release.csv_9E2CCDE218C342E19E7106002D8D3E17]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CityName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CityName]</local-name>
+            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
+            <remote-alias>CityName</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[500_Cities__Local_Data_for_Better_Health__2019_release.csv_9E2CCDE218C342E19E7106002D8D3E17]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GeographicLevel</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GeographicLevel]</local-name>
+            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
+            <remote-alias>GeographicLevel</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[500_Cities__Local_Data_for_Better_Health__2019_release.csv_9E2CCDE218C342E19E7106002D8D3E17]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DataSource</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DataSource]</local-name>
+            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
+            <remote-alias>DataSource</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[500_Cities__Local_Data_for_Better_Health__2019_release.csv_9E2CCDE218C342E19E7106002D8D3E17]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[500_Cities__Local_Data_for_Better_Health__2019_release.csv_9E2CCDE218C342E19E7106002D8D3E17]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UniqueID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[UniqueID]</local-name>
+            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
+            <remote-alias>UniqueID</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[500_Cities__Local_Data_for_Better_Health__2019_release.csv_9E2CCDE218C342E19E7106002D8D3E17]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Measure</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Measure]</local-name>
+            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
+            <remote-alias>Measure</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[500_Cities__Local_Data_for_Better_Health__2019_release.csv_9E2CCDE218C342E19E7106002D8D3E17]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Data_Value_Unit</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Data_Value_Unit]</local-name>
+            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
+            <remote-alias>Data_Value_Unit</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[500_Cities__Local_Data_for_Better_Health__2019_release.csv_9E2CCDE218C342E19E7106002D8D3E17]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DataValueTypeID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DataValueTypeID]</local-name>
+            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
+            <remote-alias>DataValueTypeID</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[500_Cities__Local_Data_for_Better_Health__2019_release.csv_9E2CCDE218C342E19E7106002D8D3E17]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Data_Value_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Data_Value_Type]</local-name>
+            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
+            <remote-alias>Data_Value_Type</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[500_Cities__Local_Data_for_Better_Health__2019_release.csv_9E2CCDE218C342E19E7106002D8D3E17]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Data_Value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Data_Value]</local-name>
+            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
+            <remote-alias>Data_Value</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[500_Cities__Local_Data_for_Better_Health__2019_release.csv_9E2CCDE218C342E19E7106002D8D3E17]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Low_Confidence_Limit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Low_Confidence_Limit]</local-name>
+            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
+            <remote-alias>Low_Confidence_Limit</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[500_Cities__Local_Data_for_Better_Health__2019_release.csv_9E2CCDE218C342E19E7106002D8D3E17]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>High_Confidence_Limit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[High_Confidence_Limit]</local-name>
+            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
+            <remote-alias>High_Confidence_Limit</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[500_Cities__Local_Data_for_Better_Health__2019_release.csv_9E2CCDE218C342E19E7106002D8D3E17]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Data_Value_Footnote_Symbol</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Data_Value_Footnote_Symbol]</local-name>
+            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
+            <remote-alias>Data_Value_Footnote_Symbol</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[500_Cities__Local_Data_for_Better_Health__2019_release.csv_9E2CCDE218C342E19E7106002D8D3E17]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Data_Value_Footnote</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Data_Value_Footnote]</local-name>
+            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
+            <remote-alias>Data_Value_Footnote</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[500_Cities__Local_Data_for_Better_Health__2019_release.csv_9E2CCDE218C342E19E7106002D8D3E17]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PopulationCount</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PopulationCount]</local-name>
+            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
+            <remote-alias>PopulationCount</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[500_Cities__Local_Data_for_Better_Health__2019_release.csv_9E2CCDE218C342E19E7106002D8D3E17]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GeoLocation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GeoLocation]</local-name>
+            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
+            <remote-alias>GeoLocation</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[500_Cities__Local_Data_for_Better_Health__2019_release.csv_9E2CCDE218C342E19E7106002D8D3E17]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CategoryID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CategoryID]</local-name>
+            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
+            <remote-alias>CategoryID</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[500_Cities__Local_Data_for_Better_Health__2019_release.csv_9E2CCDE218C342E19E7106002D8D3E17]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MeasureId</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MeasureId]</local-name>
+            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
+            <remote-alias>MeasureId</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[500_Cities__Local_Data_for_Better_Health__2019_release.csv_9E2CCDE218C342E19E7106002D8D3E17]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CityFIPS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CityFIPS]</local-name>
+            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
+            <remote-alias>CityFIPS</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[500_Cities__Local_Data_for_Better_Health__2019_release.csv_9E2CCDE218C342E19E7106002D8D3E17]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TractFIPS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TractFIPS]</local-name>
+            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
+            <remote-alias>TractFIPS</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[500_Cities__Local_Data_for_Better_Health__2019_release.csv_9E2CCDE218C342E19E7106002D8D3E17]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Short_Question_Text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Short_Question_Text]</local-name>
+            <parent-name>[500_Cities__Local_Data_for_Better_Health__2019_release.csv]</parent-name>
+            <remote-alias>Short_Question_Text</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[500_Cities__Local_Data_for_Better_Health__2019_release.csv_9E2CCDE218C342E19E7106002D8D3E17]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Category ID' datatype='string' name='[CategoryID]' role='dimension' type='nominal' />
+      <column caption='City FIPS' datatype='integer' name='[CityFIPS]' role='measure' type='quantitative' />
+      <column caption='City Name' datatype='string' name='[CityName]' role='dimension' type='nominal' />
+      <column caption='Data Source' datatype='string' name='[DataSource]' role='dimension' type='nominal' />
+      <column caption='Data Value Type ID' datatype='string' name='[DataValueTypeID]' role='dimension' type='nominal' />
+      <column caption='Data Value' datatype='real' name='[Data_Value]' role='measure' type='quantitative' />
+      <column caption='Data Value Footnote' datatype='string' name='[Data_Value_Footnote]' role='dimension' type='nominal' />
+      <column caption='Data Value Footnote Symbol' datatype='string' name='[Data_Value_Footnote_Symbol]' role='dimension' type='nominal' />
+      <column caption='Data Value Type' datatype='string' name='[Data_Value_Type]' role='dimension' type='nominal' />
+      <column caption='Data Value Unit' datatype='string' name='[Data_Value_Unit]' role='dimension' type='nominal' />
+      <column caption='Geo Location' datatype='string' name='[GeoLocation]' role='dimension' type='nominal' />
+      <column caption='Geographic Level' datatype='string' name='[GeographicLevel]' role='dimension' type='nominal' />
+      <column caption='High Confidence Limit' datatype='real' name='[High_Confidence_Limit]' role='measure' type='quantitative' />
+      <column caption='Low Confidence Limit' datatype='real' name='[Low_Confidence_Limit]' role='measure' type='quantitative' />
+      <column caption='Measure Id' datatype='string' name='[MeasureId]' role='dimension' type='nominal' />
+      <column caption='Population Count' datatype='integer' name='[PopulationCount]' role='measure' type='quantitative' />
+      <column caption='Short Question Text' datatype='string' name='[Short_Question_Text]' role='dimension' type='nominal' />
+      <column caption='State Abbr' datatype='string' name='[StateAbbr]' role='dimension' type='nominal' />
+      <column caption='State Desc' datatype='string' name='[StateDesc]' role='dimension' type='nominal' />
+      <column caption='Tract FIPS' datatype='integer' name='[TractFIPS]' role='measure' type='quantitative' />
+      <column caption='Unique ID' datatype='string' name='[UniqueID]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='500_Cities__Local_Data_for_Better_Health__2019_release.csv' datatype='table' name='[__tableau_internal_object_id__].[500_Cities__Local_Data_for_Better_Health__2019_release.csv_9E2CCDE218C342E19E7106002D8D3E17]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='500_Cities__Local_Data_for_Better_Health__2019_release.csv' id='500_Cities__Local_Data_for_Better_Health__2019_release.csv_9E2CCDE218C342E19E7106002D8D3E17'>
+            <properties context=''>
+              <relation connection='textscan.10bowmm0m3624q13r864i0u98nio' name='500_Cities__Local_Data_for_Better_Health__2019_release.csv' table='[500_Cities__Local_Data_for_Better_Health__2019_release#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='string' name='StateAbbr' ordinal='1' />
+                  <column datatype='string' name='StateDesc' ordinal='2' />
+                  <column datatype='string' name='CityName' ordinal='3' />
+                  <column datatype='string' name='GeographicLevel' ordinal='4' />
+                  <column datatype='string' name='DataSource' ordinal='5' />
+                  <column datatype='string' name='Category' ordinal='6' />
+                  <column datatype='string' name='UniqueID' ordinal='7' />
+                  <column datatype='string' name='Measure' ordinal='8' />
+                  <column datatype='string' name='Data_Value_Unit' ordinal='9' />
+                  <column datatype='string' name='DataValueTypeID' ordinal='10' />
+                  <column datatype='string' name='Data_Value_Type' ordinal='11' />
+                  <column datatype='real' name='Data_Value' ordinal='12' />
+                  <column datatype='real' name='Low_Confidence_Limit' ordinal='13' />
+                  <column datatype='real' name='High_Confidence_Limit' ordinal='14' />
+                  <column datatype='string' name='Data_Value_Footnote_Symbol' ordinal='15' />
+                  <column datatype='string' name='Data_Value_Footnote' ordinal='16' />
+                  <column datatype='integer' name='PopulationCount' ordinal='17' />
+                  <column datatype='string' name='GeoLocation' ordinal='18' />
+                  <column datatype='string' name='CategoryID' ordinal='19' />
+                  <column datatype='string' name='MeasureId' ordinal='20' />
+                  <column datatype='integer' name='CityFIPS' ordinal='21' />
+                  <column datatype='integer' name='TractFIPS' ordinal='22' />
+                  <column datatype='string' name='Short_Question_Text' ordinal='23' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Nashville 500 Cities'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='500_Cities__Local_Data_for_Better_Health__2019_release' name='federated.1cm1rxo1j4hmp41aokg780xdut0o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1cm1rxo1j4hmp41aokg780xdut0o'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column caption='City Name' datatype='string' name='[CityName]' role='dimension' type='nominal' />
+            <column caption='Data Value' datatype='real' name='[Data_Value]' role='measure' type='quantitative' />
+            <column caption='High Confidence Limit' datatype='real' name='[High_Confidence_Limit]' role='measure' type='quantitative' />
+            <column caption='Low Confidence Limit' datatype='real' name='[Low_Confidence_Limit]' role='measure' type='quantitative' />
+            <column caption='Population Count' datatype='integer' name='[PopulationCount]' role='measure' type='quantitative' />
+            <column caption='Short Question Text' datatype='string' name='[Short_Question_Text]' role='dimension' type='nominal' />
+            <column caption='State Abbr' datatype='string' name='[StateAbbr]' role='dimension' type='nominal' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CityName]' derivation='None' name='[none:CityName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Short_Question_Text]' derivation='None' name='[none:Short_Question_Text:nk]' pivot='key' type='nominal' />
+            <column-instance column='[StateAbbr]' derivation='None' name='[none:StateAbbr:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Data_Value]' derivation='Sum' name='[sum:Data_Value:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[High_Confidence_Limit]' derivation='Sum' name='[sum:High_Confidence_Limit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Low_Confidence_Limit]' derivation='Sum' name='[sum:Low_Confidence_Limit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[PopulationCount]' derivation='Sum' name='[sum:PopulationCount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1cm1rxo1j4hmp41aokg780xdut0o].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1cm1rxo1j4hmp41aokg780xdut0o].[sum:Data_Value:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1cm1rxo1j4hmp41aokg780xdut0o].[sum:High_Confidence_Limit:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1cm1rxo1j4hmp41aokg780xdut0o].[sum:Low_Confidence_Limit:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1cm1rxo1j4hmp41aokg780xdut0o].[sum:PopulationCount:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1cm1rxo1j4hmp41aokg780xdut0o].[none:CityName:nk]'>
+            <groupfilter function='member' level='[none:CityName:nk]' member='&quot;Nashville&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1cm1rxo1j4hmp41aokg780xdut0o].[none:StateAbbr:nk]'>
+            <groupfilter function='member' level='[none:StateAbbr:nk]' member='&quot;TN&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1cm1rxo1j4hmp41aokg780xdut0o].[none:StateAbbr:nk]</column>
+            <column>[federated.1cm1rxo1j4hmp41aokg780xdut0o].[none:CityName:nk]</column>
+            <column>[federated.1cm1rxo1j4hmp41aokg780xdut0o].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1cm1rxo1j4hmp41aokg780xdut0o].[none:Short_Question_Text:nk]' value='280' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1cm1rxo1j4hmp41aokg780xdut0o].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1cm1rxo1j4hmp41aokg780xdut0o].[none:Category:nk] / [federated.1cm1rxo1j4hmp41aokg780xdut0o].[none:Short_Question_Text:nk])</rows>
+        <cols>([federated.1cm1rxo1j4hmp41aokg780xdut0o].[none:CityName:nk] / [federated.1cm1rxo1j4hmp41aokg780xdut0o].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{62197A9A-4EF3-430E-9252-2D7FED48584E}' />
+    </worksheet>
+    <worksheet name='Nashville Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='TN_City_Boundaries (2)' name='federated.12s58871bh23k6166k5ef1cepytn' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.12s58871bh23k6166k5ef1cepytn'>
+            <column datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+            <column caption='Name' datatype='string' name='[NAME]' role='dimension' type='nominal' />
+            <column-instance column='[Geometry]' derivation='Collect' name='[clct:Geometry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[NAME]' derivation='None' name='[none:NAME:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.12s58871bh23k6166k5ef1cepytn].[none:NAME:nk]'>
+            <groupfilter function='member' level='[none:NAME:nk]' member='&quot;Nashville&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.12s58871bh23k6166k5ef1cepytn].[none:NAME:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='streets' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='area-green-light' />
+            <format attr='geo-area-type' value='Tract' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.12s58871bh23k6166k5ef1cepytn].[none:NAME:nk]' />
+              <lod column='[federated.12s58871bh23k6166k5ef1cepytn].[clct:Geometry:nk]' />
+              <geometry column='[federated.12s58871bh23k6166k5ef1cepytn].[clct:Geometry:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='60' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.12s58871bh23k6166k5ef1cepytn].[Latitude (generated)]</rows>
+        <cols>[federated.12s58871bh23k6166k5ef1cepytn].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{498CB5C1-EEC6-489C-9317-8923D59B64FF}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{538ACF1A-3C8C-4ECD-9059-9E56AAE65676}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='all_providers_geocoded_addresses' name='federated.1x48b4w0if7fpc1ea82ls1ydaep6' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1x48b4w0if7fpc1ea82ls1ydaep6'>
+            <column caption='Address' datatype='string' name='[address]' role='dimension' type='nominal' />
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column caption='Full Name' datatype='string' name='[full_name]' role='dimension' type='nominal' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='dimension' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='dimension' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[address]' derivation='None' name='[none:address:nk]' pivot='key' type='nominal' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+            <column-instance column='[full_name]' derivation='None' name='[none:full_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[latitude]' derivation='None' name='[none:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='None' name='[none:longitude:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1x48b4w0if7fpc1ea82ls1ydaep6].[Exclusions (Latitude,Longitude)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[none:latitude:qk]' />
+                <groupfilter function='level-members' level='[none:longitude:qk]' />
+              </groupfilter>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[none:latitude:qk]' member='-84.335890000000006' />
+                <groupfilter function='member' level='[none:longitude:qk]' member='37774.0' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1x48b4w0if7fpc1ea82ls1ydaep6].[none:city:nk]'>
+            <groupfilter function='member' level='[none:city:nk]' member='&quot;Nashville&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1x48b4w0if7fpc1ea82ls1ydaep6].[none:longitude:qk]' included-values='non-null' />
+          <slices>
+            <column>[federated.1x48b4w0if7fpc1ea82ls1ydaep6].[Exclusions (Latitude,Longitude)]</column>
+            <column>[federated.1x48b4w0if7fpc1ea82ls1ydaep6].[none:city:nk]</column>
+            <column>[federated.1x48b4w0if7fpc1ea82ls1ydaep6].[none:longitude:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.1x48b4w0if7fpc1ea82ls1ydaep6].[none:full_name:nk]' />
+              <lod column='[federated.1x48b4w0if7fpc1ea82ls1ydaep6].[none:address:nk]' />
+              <lod column='[federated.1x48b4w0if7fpc1ea82ls1ydaep6].[none:city:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Provider:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1x48b4w0if7fpc1ea82ls1ydaep6].[none:full_name:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Address:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1x48b4w0if7fpc1ea82ls1ydaep6].[none:address:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>City:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1x48b4w0if7fpc1ea82ls1ydaep6].[none:city:nk]>]]></run>
+                <run>Æ&#10;&#10;</run>
+                <run bold='true'>---</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Latitude:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1x48b4w0if7fpc1ea82ls1ydaep6].[none:latitude:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Longitude:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.1x48b4w0if7fpc1ea82ls1ydaep6].[none:longitude:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+          </pane>
+        </panes>
+        <rows>[federated.1x48b4w0if7fpc1ea82ls1ydaep6].[none:latitude:qk]</rows>
+        <cols>[federated.1x48b4w0if7fpc1ea82ls1ydaep6].[none:longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{6BDA5B8D-1E4B-4B1F-AEBA-83A11F1DBB40}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='93'>
+    <window class='worksheet' maximized='true' name='Nashville Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.12s58871bh23k6166k5ef1cepytn].[none:NAME:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{C7B78F8B-C66B-41A2-87B2-7C66141F7CC3}' />
+    </window>
+    <window class='worksheet' name='Nashville 500 Cities'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{50103A8B-FF69-4A5A-8AD9-1855592ED48A}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{40C18D2C-5D12-4E77-B9D3-5400DB0A0020}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1x48b4w0if7fpc1ea82ls1ydaep6].[none:city:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A474976B-AAD0-4C35-89E4-D7965093E4AE}' />
+    </window>
+  </windows>
+</workbook>
