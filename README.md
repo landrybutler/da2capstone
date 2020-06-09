@@ -31,7 +31,7 @@ Everyone needs a place to live and everyone needs healthcare. I live on the nort
 
 Nashville's Bordeaux neighborhood has traditionally been one of the less-developed, lower income parts of town but as Nashville expands, development is coming its way. The current widening of Clarksville Highway will bring more traffic and more residents. These new residents will want convenient medical care, neighborhood restaurants and other retail services.
 
-I think there’s a need for an Outpatient Clinic in my neighborhood and in others like it. This project will examine Nashville to discover if my hypothesis is true. 
+I think there’s a need for an Outpatient Clinic in my neighborhood and in others like it. This project will examine the data to discover if my hypothesis is true. 
 
 ### Technologies
 - Python
