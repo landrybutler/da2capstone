@@ -1,5 +1,5 @@
 # da2capstone
-This repository contains my Capstone project for the Data Analysis Bootcamp at Nashville Software School. 
+This repository contains my Capstone Project for the Data Analysis Bootcamp at Nashville Software School. 
 
 ## Contents
 - [Status](#Status)
