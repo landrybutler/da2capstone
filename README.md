@@ -1,4 +1,5 @@
 # da2capstone
+This repository contains my Capstone project for the Data Analysis Bootcamp at Nashville Software School. 
 
 ## Contents
 - [Status](#Status)
@@ -19,8 +20,6 @@ This project is in active development
 ## Description
 
 ### Summary
-This repository contains my Capstone project for the Data Analysis Bootcamp at Nashville Software School. 
-
 This project is for a fictional corporation called Wellness Enterprises that is scouting potential locations for a network of Outpatient Medical Clinics to meet current and future needs of underserved areas of Nashville.
 
 This search is of interest to me for many reasons. I’ve always been fascinated by property development and dreamed of owning lots of land. I like to look at property and think of what I might do with the land if I owned it. I’ve also spent some time working at a company that does business intelligence for the healthcare industry. I was on the design side and responsible for making the data easy to read. It was fascinating to see all that goes into deciding where to put a new hospital or medical practice.
