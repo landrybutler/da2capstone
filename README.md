@@ -70,4 +70,4 @@ I think there’s a need for an Outpatient Clinic in my neighborhood and in othe
 - License: 
 - Related Projects: 
 
-[Top of Page](#da2capstone)
+[Back to the beginning of the README](#da2capstone)
