@@ -7,12 +7,12 @@ This repository contains my Capstone Project for the Data Analysis Bootcamp at N
 - [Summary](#Summary)
 - [Motivation](#Motivation)
 - [Technologies Used](#Technologies)
-- [Data Questions](#Data)
-- [Data Sources](#Data)
-- [Known Issues and Challenges](#Known)
+- [Data Questions](#Data-Questions)
+- [Data Sources](#Data-Sources)
+- [Known Issues and Challenges](#Known-Issues-and-Challenges)
 - [Contributors](#Contributors)
 - [Acknowledgments](#Acknowledgments)
-- [Related Links](#Links)
+- [Related Links](#Related-Links)
 
 ## Status: In Process
 This project is in active development
@@ -55,7 +55,7 @@ I think there’s a need for an Outpatient Clinic in my neighborhood and in othe
 - Finding the right data will be a challenge. There’s a lot of information out there and I’m not always sure what’s what.
 - Asking the best questions will be a challenge. I want to find the story in the data rather than try and prove a preceding conclusion.
 - How do I know when I’m done?
-- I’ll need to learn some new tools, such as CenPy or CARTOframes : to work with Census units such as Block Groups or Tracts, for more accurate delineation and comparison of areas.
+- I’ll need to learn some new tools, such as CenPy or CARTOframes, to work with Census units such as Block Groups or Tracts, for more accurate delineation and comparison of areas.
 
 ## Contributors
 - Landry Butler
