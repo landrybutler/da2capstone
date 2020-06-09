@@ -40,7 +40,7 @@ I think there’s a need for an Outpatient Clinic in my neighborhood and in othe
 
 ## Data Questions
 - What areas of the city are underserved by existing heathcare locations?
-    - Define “underserved” and determine which communities are fit the criteria
+    - Define “underserved” and determine which communities fit the criteria
 - What services are needed in those areas?
     - Look at the CDC and RWJF for info on population’s healthcare needs 
 
