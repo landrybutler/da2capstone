@@ -64,7 +64,7 @@ I think there’s a need for an Outpatient Clinic in my neighborhood and in othe
 
 ## Acknowledgments
 - The faculty and staff of Nashville Software School, for their masterful handling of the pivot from in-person to online-only classes as a result of the 2020 Pandemic.
-- My wife, Lori Butler (also a data analyst) for brainstorming ideas and solutions with me.
+- My wife, Lori Butler (also a data analyst), for brainstorming ideas and solutions with me.
 
 ## Links
 - Home Page: 
