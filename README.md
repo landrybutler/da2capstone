@@ -45,17 +45,17 @@ I think there’s a need for an Outpatient Clinic in my neighborhood and in othe
     - Look at the CDC and RWJF for info on population’s healthcare needs 
 
 ## Data Sources
-- Medicare Outpatient Provider Utilization and Payment Data: https://is.gd/4JyPoC 
-- USPS ZIP Code Crosswalk files:  https://is.gd/lou2U9
-- APC to CPT/HCPCS crosswalk: https://is.gd/VRZsLc 
-- Tennessee State Population Projections: https://wonder.cdc.gov/population-projections.html 
+- Medicare Outpatient Provider Data: https://is.gd/4JyPoC 
+- CDC 500 Cities Study: https://is.gd/6FcGh0 
+- Tennessee State Population Projections: https://is.gd/4rCjpl 
+- Nashville Public Health Clinics: https://is.gd/q7R7em
 - Additional data sources as needed
 
 ## Known Issues and Challenges
 - Finding the right data will be a challenge. There’s a lot of information out there and I’m not always sure what’s what.
 - Asking the best questions will be a challenge. I want to find the story in the data rather than try and prove a preceding conclusion.
 - How do I know when I’m done?
-- I’ll need to learn some new tools, such as CenPy or CARTOframes, to work with Census units such as Block Groups or Tracts, for more accurate delineation and comparison of areas.
+- I may need to learn some new tools, such as CenPy or CARTOframes, to work with Census units such as Block Groups or Tracts, for more accurate delineation and comparison of areas.
 
 ## Contributors
 - Landry Butler
@@ -63,6 +63,8 @@ I think there’s a need for an Outpatient Clinic in my neighborhood and in othe
 - 
 
 ## Acknowledgments
+- The faculty and staff of Nashville Software School, for their masterful handling of the pivot from in-person to online-only classes as a result of the 2020 Pandemic.
+- My wife, Lori Butler (also a data analyst) for brainstorming ideas and solutions with me.
 
 ## Links
 - Home Page: 
