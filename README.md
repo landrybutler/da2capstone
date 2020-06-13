@@ -49,12 +49,13 @@ I think there’s a need for an Outpatient Clinic in my neighborhood and in othe
 - CDC 500 Cities Study: https://is.gd/6FcGh0 
 - Tennessee State Population Projections: https://is.gd/4rCjpl 
 - Nashville Public Health Clinics: https://is.gd/q7R7em
+- U.S. Census Bureau Geocoder: https://is.gd/SRmzi9
 - Additional data sources as needed
 
 ## Known Issues and Challenges
 - Finding the right data will be a challenge. There’s a lot of information out there and I’m not always sure what’s what.
 - Asking the best questions will be a challenge. I want to find the story in the data rather than try and prove a preceding conclusion.
-- How do I know when I’m done?
+- How do I know when I’m done? 
 - I may need to learn some new tools, such as CenPy or CARTOframes, to work with Census units such as Block Groups or Tracts, for more accurate delineation and comparison of areas.
 
 ## Contributors
