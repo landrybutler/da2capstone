@@ -36,7 +36,6 @@ I think there’s a need for an Outpatient Clinic in my neighborhood and in othe
 ### Technologies
 - Python
 - Tableau
-- 
 
 ## Data Questions
 - What areas of the city are underserved by existing heathcare locations?
@@ -47,7 +46,7 @@ I think there’s a need for an Outpatient Clinic in my neighborhood and in othe
 ## Data Sources
 - Medicare Outpatient Provider Data: https://is.gd/4JyPoC 
 - CDC 500 Cities Study: https://is.gd/6FcGh0 
-- Tennessee State Population Projections: https://is.gd/4rCjpl 
+- Tennessee State Population Projections: https://tnsdc.utk.edu/?p=39
 - Nashville Public Health Clinics: https://is.gd/q7R7em
 - U.S. Census Bureau Geocoder: https://is.gd/SRmzi9
 - Additional data sources as needed
@@ -60,12 +59,12 @@ I think there’s a need for an Outpatient Clinic in my neighborhood and in othe
 
 ## Contributors
 - Landry Butler
-- 
-- 
 
 ## Acknowledgments
 - The faculty and staff of Nashville Software School, for their masterful handling of the pivot from in-person to online-only classes as a result of the 2020 Pandemic.
+- 
 - My wife, Lori Butler (also a data analyst), for brainstorming ideas and solutions with me.
+- Repository photo by Hush Naidoo on Unsplash
 
 ## Links
 - Home Page: 
