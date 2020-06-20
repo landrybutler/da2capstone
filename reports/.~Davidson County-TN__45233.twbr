@@ -4727,7 +4727,7 @@
           <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97572' id='1' param='vert' removable='false' w='98426' x='787' y='1214'>
             <zone _.fcp.SetMembershipControl.false...type='flipboard-nav' _.fcp.SetMembershipControl.true...type-v2='flipboard-nav' h='11988' id='4' paired-zone-id='5' removable='false' w='98426' x='787' y='1214' />
             <zone _.fcp.SetMembershipControl.false...type='flipboard' _.fcp.SetMembershipControl.true...type-v2='flipboard' h='85584' id='5' paired-zone-id='4' removable='false' w='98426' x='787' y='13202'>
-              <flipboard active-id='6' nav-type='number' show-nav-arrows='true'>
+              <flipboard active-id='1' nav-type='number' show-nav-arrows='true'>
                 <story-points>
                   <story-point caption='Cover Page' captured-sheet='Skyline' id='1' />
                   <story-point caption='Introduction' captured-sheet='Introduction' id='7'>
@@ -6098,12 +6098,12 @@
             <format attr='margin' value='8' />
           </zone-style>
         </zone>
-        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' flipboard-zone-id='5' forceUpdate='true' h='12747' hidden='true' id='6' story-point-id='1' w='33858' x='38484' y='24886'>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' flipboard-zone-id='5' forceUpdate='true' h='12747' id='6' story-point-id='1' w='33858' x='38484' y='24886'>
           <formatted-text>
             <run fontname='Tableau Light' fontsize='36'>Serving the</run>
           </formatted-text>
         </zone>
-        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' flipboard-zone-id='5' forceUpdate='true' h='73141' id='11' story-point-id='6' w='55512' x='23228' y='21548'>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' flipboard-zone-id='5' forceUpdate='true' h='73141' hidden='true' id='11' story-point-id='6' w='55512' x='23228' y='21548'>
           <formatted-text>
             <run fontcolor='#000000' fontsize='18'>Any Questions?</run>
             <run>Æ&#10;&#10;</run>
@@ -6250,17 +6250,17 @@
             <run>Æ&#10;</run>
           </formatted-text>
         </zone>
-        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' flipboard-zone-id='5' forceUpdate='true' h='9712' hidden='true' id='33' story-point-id='1' w='37008' x='49311' y='45372'>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' flipboard-zone-id='5' forceUpdate='true' h='9712' id='33' story-point-id='1' w='37008' x='49311' y='45372'>
           <formatted-text>
             <run>A brief look at the need for additional outpatient clinics in growing areas</run>
           </formatted-text>
         </zone>
-        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' flipboard-zone-id='5' forceUpdate='true' h='13050' hidden='true' id='34' story-point-id='1' w='43209' x='48425' y='31866'>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' flipboard-zone-id='5' forceUpdate='true' h='13050' id='34' story-point-id='1' w='43209' x='48425' y='31866'>
           <formatted-text>
             <run fontname='Tableau Light' fontsize='48'>Underserved</run>
           </formatted-text>
         </zone>
-        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' flipboard-zone-id='5' forceUpdate='true' h='4552' hidden='true' id='35' story-point-id='1' w='25787' x='65354' y='55387'>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' flipboard-zone-id='5' forceUpdate='true' h='4552' id='35' story-point-id='1' w='25787' x='65354' y='55387'>
           <formatted-text>
             <run fontsize='12'>By Landry Butler | June 2020</run>
           </formatted-text>
@@ -6733,7 +6733,7 @@
     </window>
     <window class='dashboard' name='Outcome Comparison'>
       <viewpoints />
-      <active id='22' />
+      <active id='-1' />
       <simple-id uuid='{309F5872-4315-4F75-9743-028A4750CEF4}' />
     </window>
     <window class='dashboard' name='Skyline'>
