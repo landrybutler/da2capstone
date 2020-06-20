@@ -67,7 +67,7 @@ I think there’s a need for an Outpatient Clinic in my neighborhood and in othe
 
 ## Links
 - Tableau Presentation:  https://is.gd/7qOKuQ
-- GitHubRepository: https://github.com/landrybutler/da2capstone
+- GitHub Repository: https://github.com/landrybutler/da2capstone
 - Home Page: https://www.landrybutler.com
 - License: 
 - Related Projects: 
