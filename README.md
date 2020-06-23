@@ -24,7 +24,7 @@ This project takes a brief look at the distribution of healthcare providers in t
 
 This search is of interest to me for many reasons. I’ve always been fascinated by property development and dreamed of owning lots of land. I like to look at property and think of what I might do with the land if I owned it. I’ve also spent some time working at a company that does business intelligence for the healthcare industry. I was on the design side and responsible for making the data easy to read. It was fascinating to see all that goes into deciding where to put a new hospital or medical practice.
 
-This project will examine publicly available data from Medicare, the CDC, Census Bureau and other sources to determine which communities are underserved, have unmet healthcare needs and what those needs are. The final deliverable will be a Tableau dashboard that allows the user to look at the different variables and how they point to potential new clinic locations.
+This project examines publicly available data from Medicare, the CDC, Census Bureau and other sources to determine which communities are underserved, have unmet healthcare needs and what those needs are. The final deliverable is a Tableau dashboard that allows the user to look at the different variables and how they point to potential new clinic locations.
 
 ### Motivation
 Everyone needs a place to live and everyone needs healthcare. I live on the northwest side of Nashville, where there is no healthcare. Years ago, there were two hospitals and several doctors’ offices nearby but those have all closed. Now the closest hospital is Nashville General, about 20 min away. 
@@ -67,6 +67,7 @@ I think there’s a need for an Outpatient Clinic in my neighborhood and in othe
 
 ## Links
 - Tableau Presentation:  https://is.gd/7qOKuQ
+- Video Presentation: https://youtu.be/sicEHBph0ns
 - GitHub Repository: https://github.com/landrybutler/da2capstone
 - Home Page: https://www.landrybutler.com
 - License: https://github.com/landrybutler/da2capstone/blob/master/LICENSE
