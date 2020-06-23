@@ -66,10 +66,10 @@ I think there’s a need for an Outpatient Clinic in my neighborhood and in othe
 - Stock photos by Nat'l Cancer Institute, Joshua Ness and Moraa Ondari via Unsplash
 
 ## Links
-- Tableau Presentation:  https://is.gd/7qOKuQ
-- Video Presentation: https://youtu.be/sicEHBph0ns
 - GitHub Repository: https://github.com/landrybutler/da2capstone
 - Home Page: https://www.landrybutler.com
 - License: https://github.com/landrybutler/da2capstone/blob/master/LICENSE
+- Tableau Presentation:  https://is.gd/GvJ0Hn
+- Video Presentation: https://youtu.be/sicEHBph0ns
 
 [Back to the beginning of the README](#da2capstone)
