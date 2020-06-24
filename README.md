@@ -14,8 +14,8 @@ This repository contains my Capstone Project for the Data Analysis Bootcamp at N
 - [Acknowledgments](#Acknowledgments)
 - [Related Links](#Related-Links)
 
-## Status: In Process
-This project is in active development
+## Status: Complete
+This project is finished and ready for use.
 
 ## Description
 
